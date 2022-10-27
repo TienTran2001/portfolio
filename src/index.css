@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* base */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply text-white font-ibm bg-bgColor leading-7;
+  }
+}
+/* custom class */
+@layer components {
+  .heading {
+    @apply text-blue-400 !font-bold mt-10 text-center text-[34px] md:text-[42px];
+  }
+  .container {
+    @apply border-t-2 md:px-0;
+  }
 }
