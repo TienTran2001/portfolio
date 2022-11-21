@@ -1,4 +1,4 @@
-import avatar from "../../assets/about.jpg";
+import avatar from "../../assets/about1.jpg";
 function About() {
   console.log(avatar);
   return (
